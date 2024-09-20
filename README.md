@@ -17,10 +17,12 @@ Execute o script
 
 Script completo que inclui:
 
-* Instalação do Docker
-* Docker Compose
-* Arquivo docker-compose.yml com as configurações necessarias
+* Atualiza os pacotes e instala pré-requisitos.
+* Instala o Docker e Docker Compose.
+* Configura permissões para rodar o Docker sem sudo.
+* Cria o arquivo docker-compose.yml automaticamente com as configurações do Kafka, Zookeeper e Kafka UI.
 
+O serviço kafka-ui está incluído no arquivo docker-compose.yml que o script cria. O Kafka-UI é uma interface gráfica que permite visualizar e gerenciar os tópicos e mensagens do Kafka.
 
 # Certifica-se de que o sistema tenha informações atualizadas sobre os pacotes disponíveis.
   Já esta incluso no Script:
@@ -53,3 +55,5 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 ```
+# Após executar o script
+Em http://localhost:8080, interface do Kafka-UI onde poderá monitorar e interagir com seu cluster Kafka.
