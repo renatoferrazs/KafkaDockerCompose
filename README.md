@@ -16,7 +16,7 @@ Script completo que inclui:
 * Adiciona o repositório do Docker oficial para garantir que a instalação pegue os pacotes diretamente da fonte.
 
 
-# Se o Docker já está instalado:
+# Se o Docker já está instalado
 Se o Docker já está instalado e funcionando corretamente, você não precisa desse trecho. Ele é útil apenas para preparar o ambiente e instalar o Docker caso ele ainda não esteja disponível no sistema.
 
 ```
