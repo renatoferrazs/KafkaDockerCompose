@@ -1,6 +1,19 @@
 # KafkaDockerCompose
 Script para criar instalar Docker com Kafka e itnerface Kafka-UI para Linux ou WSL2
 
+# Dê permissão de execução
+
+No terminal, navegue até o diretório onde o script está salvo e execute o seguinte comando:
+
+```
+chmod +x setup-kafka.sh
+```
+
+Execute o script 
+
+```
+./setup-kafka.sh
+```
 
 Script completo que inclui:
 
