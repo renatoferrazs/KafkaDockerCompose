@@ -8,6 +8,11 @@ No terminal, navegue até o diretório onde o script está salvo e execute o seg
 ```
 chmod +x setup-kafka.sh
 ```
+Antes de executar o script, valide a linha 44 do arquivo e altere os dados de localhost, colocando o ip da maquina:
+
+```
+KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:9092,OUTSIDE://localhost:9093
+```
 
 Execute o script 
 
