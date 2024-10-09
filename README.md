@@ -1,5 +1,5 @@
 # KafkaDockerCompose
-Script para criar instalar Docker com Kafka e itnerface Kafka-UI para Linux ou WSL2
+Script para criar instalar Docker com Kafka e interface Kafka-UI para Linux ou WSL2
 
 # Dê permissão de execução
 
@@ -33,4 +33,4 @@ Script completo que inclui:
 O serviço kafka-ui que está incluído no arquivo é uma interface gráfica que permite visualizar e gerenciar os tópicos e mensagens do Kafka.
 
 # Após executar o script
-Em http://localhost:8080, interface do Kafka-UI onde poderá monitorar e interagir com seu cluster Kafka.
+Acessar o Kafka-UI no endereço http://localhost:8080, onde poderá monitorar e interagir com seu cluster Kafka.
