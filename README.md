@@ -34,3 +34,39 @@ O serviço kafka-ui que está incluído no arquivo é uma interface gráfica que
 
 # Após executar o script
 Acessar o Kafka-UI no endereço http://localhost:8080, onde poderá monitorar e interagir com seu cluster Kafka.
+
+
+
+
+# Comandos básicos do Docker Compose listados em tópicos sequenciais:
+
+Subir os serviços (containers):	```docker-compose up```
+
+Em segundo plano: ```docker-compose up -d```
+
+Parar os serviços:	```docker-compose stop```
+
+Derrubar os serviços (remover containers):	```docker-compose down```
+
+
+Para remover volumes: ```docker-compose down -v```
+
+Listar os containers em execução:	```docker-compose ps```
+
+Ver logs dos containers:
+* Todos os logs: ```docker-compose logs```
+* Logs de um serviço específico: ```docker-compose logs nome_do_serviço```
+* Logs em tempo real: ```docker-compose logs -f```
+ 
+
+Reiniciar os serviços: 
+* Todos os serviços: ```docker-compose restart```
+* Serviço específico: ```docker-compose restart nome_do_serviço```
+
+Ver informações detalhadas dos containers:	```docker-compose top```
+
+Executar um comando em um container:	```docker-compose exec nome_do_serviço comando```
+
+Exemplo (acessar o shell): ```docker-compose exec kafka bash```
+
+Atualizar os containers (reconstruir):	```docker-compose up -d --build```
